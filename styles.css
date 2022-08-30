@@ -12,25 +12,24 @@
   --primary-yellow: #f72585;
 }
 
-html {
-    height: 100%;
-}
-body {
+html, body {
   padding: 0;
   margin: 0;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   height: 100%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Header */
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: var(--header);
+  height: 10%;
 }
 
 .title {
-  font-size: 42px;
+  font-size: 36px;
   color: var(--primary-yellow);
   font-family: "Silkscreen", cursive;
 }
@@ -43,6 +42,7 @@ body {
   align-items: center;
   background-color: var(--primary-dark);
   color: white;
+  height: 80%;
 }
 
 .main .top {
@@ -54,13 +54,13 @@ body {
 
 .main .middle {
     display: flex;
-    font-size: 32px;
+    font-size: 26px;
     justify-content: center;
     align-items: center;
 }
 
 .main .middle .score-box {
-    padding: 40px;
+    padding: 5px 20px 5px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,4 +91,5 @@ body {
     color: var(--primary-light);
     font-size: 20px;
     margin-bottom: 0;
+    height: 10%;
   }
