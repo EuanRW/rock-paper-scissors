@@ -17,31 +17,37 @@
 
     <main class="main">
         <div class="top">
-            <h2 class="score-info">Pick an option</h2>
-            <h3 class="score-message">First to score 5 points wins!</h3>
+            <h2 class="score-info" id="scoreInfo">Pick an option</h2>
+            <h3 class="score-message" id="scoreMessage">First to score 5 points wins!</h3>
         </div>
         <div class="middle"> 
             <div class="score-box">
-                <p>❔</p>
-                <p>You: 0</p>
+                <p class = "choiceSymbol" id="playerChoiceSymbol">❔</p>
+                <p id="playerScore">You: 0</p>
             </div>
             <div class="score-box">
-                <p>❔</p>
-                <p>Computer: 0</p>
+                <p class = "choiceSymbol" id="computerChoiceSymbol">❔</p>
+                <p id="computerScore">Computer: 0</p>
             </div>
         </div>
         <div class="bottom">
-            <button class="btn">✊</button>
-            <button class="btn">🤚</button>
-            <button class="btn">✌️</button>
+            <button class="btn" id="rockBtn">✊</button>
+            <button class="btn" id="paperBtn">🤚</button>
+            <button class="btn" id="scissorsBtn">✌️</button>
         </div>
         
     </main>
     
-    
     <footer class="footer">
-        <p>Footer</p>
+        <a href="https://github.com/EuanRW" target="_blank">Euan Williams GitHub</a>
     </footer>
+
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
+      </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="rock-paper-scissors.js"></script>
 </body>
 </html>
 
